@@ -12,12 +12,12 @@ interface AuthState {
   setLoading: (loading: boolean) => void;
 }
 
-// Mock API calls - replace with actual API
+
 const mockLogin = async (email: string, password: string): Promise<{ user: User; token: string }> => {
-  // Simulate API delay
+  
   await new Promise(resolve => setTimeout(resolve, 1000));
   
-  // Mock user data based on email
+ 
   const mockUsers: Record<string, User> = {
     'admin@clinic.com': {
       id: '1',

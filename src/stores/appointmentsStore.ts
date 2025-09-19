@@ -99,8 +99,8 @@ export const useAppointmentsStore = create<AppointmentsState>((set, get) => ({
     const newAppointment: Appointment = {
       ...appointmentData,
       id: Date.now().toString(),
-      patient: mockAppointments[0].patient, // Mock patient data
-      doctor: mockAppointments[0].doctor, // Mock doctor data
+      patient: mockAppointments[0].patient,
+      doctor: mockAppointments[0].doctor, 
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString()
     };

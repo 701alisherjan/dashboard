@@ -15,7 +15,7 @@ export const MedicalRecordModal: React.FC<MedicalRecordModalProps> = ({ patientI
     title: '',
     description: '',
     prescription: '',
-    authorId: '2' // Mock doctor ID
+    authorId: '2' 
   });
 
   const handleSubmit = async (e: React.FormEvent) => {

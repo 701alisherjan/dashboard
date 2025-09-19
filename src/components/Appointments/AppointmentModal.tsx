@@ -13,13 +13,13 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({ appointment,
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     patientId: '',
-    doctorId: '2', // Mock doctor ID
+    doctorId: '2',
     date: '',
     startTime: '',
     endTime: '',
     reason: '',
     notes: '',
-    createdBy: '3' // Mock reception user ID
+    createdBy: '3' 
   });
 
   useEffect(() => {

@@ -17,7 +17,7 @@ interface PatientsState {
   setSearchQuery: (query: string) => void;
 }
 
-// Mock data
+
 const mockPatients: Patient[] = [
   {
     id: '1',
@@ -75,7 +75,7 @@ export const usePatientsStore = create<PatientsState>((set, get) => ({
 
   fetchPatients: async () => {
     set({ isLoading: true });
-    // Simulate API call
+    
     await new Promise(resolve => setTimeout(resolve, 800));
     set({ patients: mockPatients, isLoading: false });
   },
