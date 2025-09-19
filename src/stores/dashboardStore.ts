@@ -55,7 +55,7 @@ const mockStats: DashboardStats = {
         email: 'doctor@clinic.com',
         firstName: 'Dr. Michael',
         lastName: 'Smith',
-        role: 'doctor',
+        role: 'doktor',
         createdAt: '2024-01-01T00:00:00Z',
         updatedAt: '2024-01-01T00:00:00Z'
       },

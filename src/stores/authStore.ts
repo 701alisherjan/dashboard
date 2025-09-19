@@ -31,13 +31,13 @@ const mockLogin = async (email: string, password: string): Promise<{ user: User;
     'doctor@clinic.com': {
       id: '2',
       email: 'doctor@clinic.com',
-      firstName: '',
-      lastName: '',
+      firstName: 'Ahmadjon',
+      lastName: 'Qo`shboqov',
       role: 'doktor',
       createdAt: '2024-01-01T00:00:00Z',
       updatedAt: '2024-01-01T00:00:00Z'
     },
-    'foydalanuvchi@clinic.com': {
+    'reception@clinic.com': {
       id: '3',
       email: 'foydalanuvchi@clinic.com',
       firstName: 'Sutonbek',

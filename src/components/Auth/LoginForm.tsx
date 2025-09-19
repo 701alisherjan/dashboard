@@ -22,16 +22,16 @@ export const LoginForm: React.FC = () => {
 
   const demoCredentials = [
     { email: 'admin@clinic.com', password: 'password', role: 'Admin' },
-    { email: 'doctor@clinic.com', password: 'password', role: 'Doctor' },
-    { email: 'reception@clinic.com', password: 'password', role: 'Reception' }
+    { email: 'doctor@clinic.com', password: 'password', role: 'Doktor' },
+    { email: 'reception@clinic.com', password: 'password', role: 'Foydalanuvchi' }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 flex items-center justify-center p-4">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <div className="mx-auto w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-            <span className="text-white text-2xl font-bold">PC</span>
+          <div className="mx-auto w-28 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+            <span className="text-white text-2xl font-bold">MedTech</span>
           </div>
           <h2 className="mt-6 text-3xl font-bold text-gray-900">PatientCare Lite</h2>
           <p className="mt-2 text-sm text-gray-600">Medical Management System</p>

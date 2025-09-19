@@ -39,7 +39,7 @@ export const AppointmentsList: React.FC = () => {
     }
   };
 
-  const canEdit = user?.role === 'admin' || user?.role === 'reception';
+  const canEdit = user?.role === 'admin' || user?.role === 'foydalanuvchi';
   const canDelete = user?.role === 'admin';
 
   return (
