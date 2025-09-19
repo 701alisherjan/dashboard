@@ -1,6 +1,7 @@
 import React from 'react';
 import { LogOut, User, Bell, Settings } from 'lucide-react';
 import { useAuthStore } from '../../stores/authStore';
+import { Link } from 'react-router-dom';
 
 export const Navbar: React.FC = () => {
   const { user, logout } = useAuthStore();
@@ -20,36 +21,26 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white text-sm font-bold">PC</span>
+              <div className="w-8 h-8 flex items-center justify-center">
+                <img className='rounded-md' src="https://i.pinimg.com/736x/a5/08/76/a50876f615851961e964e3560f11fad8.jpg" alt="medical" />
               </div>
-              <span className="ml-3 text-xl font-bold text-gray-900">PatientCare</span>
-              <span className="ml-2 text-sm font-medium text-gray-500">Lite</span>
+              <span className="ml-3 text-xl font-bold text-gray-900">MedTech</span>
+              <span className="ml-2 text-sm font-medium text-gray-500">PRO</span>
             </div>
           </div>
 
           <div className="flex items-center space-x-4">
+            <Link to={'/notification'}>
             <button className="p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 rounded-lg transition-colors">
               <Bell className="w-5 h-5" />
             </button>
-            
-            <button className="p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 rounded-lg transition-colors">
-              <Settings className="w-5 h-5" />
-            </button>
-
+            </Link>
             <div className="flex items-center space-x-3 pl-3 border-l border-gray-300">
               <div className="flex items-center space-x-3">
                 <div className="text-right">
                   <p className="text-sm font-medium text-gray-900">
                     {user?.firstName} {user?.lastName}
                   </p>
-                  <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${getRoleBadgeColor(user?.role || '')}`}>
-                    {user?.role?.charAt(0).toUpperCase() + user?.role?.slice(1)}
-                  </span>
-                </div>
-                
-                <div className="w-8 h-8 bg-gradient-to-r from-gray-400 to-gray-500 rounded-full flex items-center justify-center">
-                  <User className="w-4 h-4 text-white" />
                 </div>
               </div>
 

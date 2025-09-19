@@ -22,8 +22,8 @@ const mockLogin = async (email: string, password: string): Promise<{ user: User;
     'admin@clinic.com': {
       id: '1',
       email: 'admin@clinic.com',
-      firstName: 'Dr. Sarah',
-      lastName: 'Johnson',
+      firstName: 'Alisher',
+      lastName: 'Abdullayev',
       role: 'admin',
       createdAt: '2024-01-01T00:00:00Z',
       updatedAt: '2024-01-01T00:00:00Z'
@@ -31,18 +31,18 @@ const mockLogin = async (email: string, password: string): Promise<{ user: User;
     'doctor@clinic.com': {
       id: '2',
       email: 'doctor@clinic.com',
-      firstName: 'Dr. Michael',
-      lastName: 'Smith',
-      role: 'doctor',
+      firstName: '',
+      lastName: '',
+      role: 'doktor',
       createdAt: '2024-01-01T00:00:00Z',
       updatedAt: '2024-01-01T00:00:00Z'
     },
-    'reception@clinic.com': {
+    'foydalanuvchi@clinic.com': {
       id: '3',
-      email: 'reception@clinic.com',
-      firstName: 'Emma',
-      lastName: 'Wilson',
-      role: 'reception',
+      email: 'foydalanuvchi@clinic.com',
+      firstName: 'Sutonbek',
+      lastName: 'O`skanboyev',
+      role: 'foydalanuvchi',
       createdAt: '2024-01-01T00:00:00Z',
       updatedAt: '2024-01-01T00:00:00Z'
     }

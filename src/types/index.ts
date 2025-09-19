@@ -3,7 +3,7 @@ export interface User {
   email: string;
   firstName: string;
   lastName: string;
-  role: 'admin' | 'doctor' | 'reception';
+  role: 'admin' | 'doktor' | 'foydalanuvchi';
   createdAt: string;
   updatedAt: string;
 }
