@@ -39,7 +39,7 @@ const mockLogin = async (email: string, password: string): Promise<{ user: User;
     },
     'reception@clinic.com': {
       id: '3',
-      email: 'foydalanuvchi@clinic.com',
+      email: 'reception@clinic.com',
       firstName: 'Sutonbek',
       lastName: 'O`skanboyev',
       role: 'foydalanuvchi',
