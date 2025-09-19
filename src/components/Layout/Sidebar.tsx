@@ -11,12 +11,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onPageChange }) =
   const { user } = useAuthStore();
 
   const menuItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: Home, allowedRoles: ['admin', 'doctor', 'reception'] },
-    { id: 'patients', label: 'Patients', icon: Users, allowedRoles: ['admin', 'doctor', 'reception'] },
-    { id: 'appointments', label: 'Appointments', icon: Calendar, allowedRoles: ['admin', 'doctor', 'reception'] },
-    { id: 'records', label: 'Medical Records', icon: FileText, allowedRoles: ['admin', 'doctor'] },
+    { id: 'dashboard', label: 'Dashboard', icon: Home, allowedRoles: ['admin', 'doktor', 'foydalanuvchi'] },
+    { id: 'patients', label: 'Patients', icon: Users, allowedRoles: ['admin', 'doktor', 'foydalanuvchi'] },
+    { id: 'appointments', label: 'Appointments', icon: Calendar, allowedRoles: ['admin', 'doktor', 'foydalanuvchi'] },
+    { id: 'records', label: 'Medical Records', icon: FileText, allowedRoles: ['admin', 'doktor'] },
     { id: 'users', label: 'User Management', icon: UserCheck, allowedRoles: ['admin'] },
-    { id: 'analytics', label: 'Analytics', icon: BarChart3, allowedRoles: ['admin', 'doctor'] }
+    { id: 'analytics', label: 'Analytics', icon: BarChart3, allowedRoles: ['admin', 'doktor'] }
   ];
 
   const filteredMenuItems = menuItems.filter(item => 
