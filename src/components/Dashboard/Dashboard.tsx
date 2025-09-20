@@ -3,6 +3,7 @@ import { Users, Calendar, UserPlus, CheckCircle, Clock, Activity } from 'lucide-
 import { StatsCard } from './StatsCard';
 import { useDashboardStore } from '../../stores/dashboardStore';
 import { useAuthStore } from '../../stores/authStore';
+import { DashboardCharts } from './Chart';
 
 export const Dashboard: React.FC = () => {
   const { stats, isLoading, fetchStats } = useDashboardStore();
@@ -74,7 +75,6 @@ export const Dashboard: React.FC = () => {
           color="orange"
         />
       </div>
-
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <div className="flex items-center justify-between mb-4">

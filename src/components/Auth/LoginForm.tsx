@@ -33,8 +33,6 @@ export const LoginForm: React.FC = () => {
           <div className="mx-auto w-28 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
             <span className="text-white text-2xl font-bold">MedTech</span>
           </div>
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">PatientCare Lite</h2>
-          <p className="mt-2 text-sm text-gray-600">Medical Management System</p>
         </div>
 
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
@@ -67,7 +65,7 @@ export const LoginForm: React.FC = () => {
                 />
               </div>
             </div>
-
+              
             <div>
               <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
                 Password

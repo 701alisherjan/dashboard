@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogOut, User, Bell, Settings } from 'lucide-react';
+import { LogOut,  Bell  } from 'lucide-react';
 import { useAuthStore } from '../../stores/authStore';
 import { Link } from 'react-router-dom';
 

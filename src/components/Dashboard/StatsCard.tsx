@@ -1,10 +1,10 @@
-import React from 'react';
-import { DivideIcon as LucideIcon } from 'lucide-react';
+import { LucideIcon } from "lucide-react";
+
 
 interface StatsCardProps {
   title: string;
   value: number;
-  icon: LucideIcon;
+  icon: LucideIcon  ;
   color: 'blue' | 'green' | 'purple' | 'orange';
   trend?: {
     value: number;
@@ -20,7 +20,7 @@ export const StatsCard: React.FC<StatsCardProps> = ({ title, value, icon: Icon, 
     orange: 'bg-orange-500 text-orange-600 bg-orange-50'
   };
 
-  const [bgColor, textColor, lightBg] = colorClasses[color].split(' ');
+  const [ textColor, lightBg] = colorClasses[color].split(' ');
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow">

@@ -3,7 +3,7 @@ import { Home, Users, Calendar, FileText, UserCheck, BarChart3 } from 'lucide-re
 import { useAuthStore } from '../../stores/authStore';
 
 interface SidebarProps {
-  currentPage: string;
+  currentPage: string;  
   onPageChange: (page: string) => void;
 }
 
@@ -50,13 +50,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onPageChange }) =
             );
           })}
         </nav>
-      </div>
-
-      <div className="absolute bottom-0 w-64 p-4 border-t border-gray-200">
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-3 rounded-lg">
-          <p className="text-xs font-medium text-blue-900 mb-1">Medical System</p>
-          <p className="text-xs text-blue-700">PatientCare Lite v1.0</p>
-        </div>
       </div>
     </div>
   );
